@@ -29,6 +29,18 @@ const BioData = (props) => {
       </ul>
     </div>
     <div className='social-link'>
+    <h2>
+      social media
+    </h2>
+    <ul>
+      {props?.socialLinks?.map((socialLink)=>(
+        <li>
+          <strong>{socialLink.platformName}:</strong>
+          {socialLink.handle}
+        </li>
+      ))}
+      
+    </ul>
 
     </div>
     </>
