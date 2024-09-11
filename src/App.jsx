@@ -2,6 +2,7 @@ import React from 'react';
 
 const BioData = (props) => {
   return (
+    <>
     <div className='Bio-Data'>
       <div>BioData</div>
       
@@ -16,9 +17,12 @@ const BioData = (props) => {
       <p>
         <strong>Github:</strong>{props.github}
       </p>
-
       </div>
     </div>
+    <div className='Skills'>
+      <p>My skills</p>
+    </div>
+    </>
   );
 };
 
