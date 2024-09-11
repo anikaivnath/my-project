@@ -1,3 +1,4 @@
+import { list } from 'postcss';
 import React from 'react';
 
 const BioData = (props) => {
@@ -21,6 +22,14 @@ const BioData = (props) => {
     </div>
     <div className='Skills'>
       <p>My skills</p>
+      <ul>
+        {props?.skills?.map((skill)=>{
+          <li key={skill}>{skill}</li>
+        })}
+      </ul>
+    </div>
+    <div className='social-link'>
+
     </div>
     </>
   );
