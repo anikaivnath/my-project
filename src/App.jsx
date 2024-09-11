@@ -1,11 +1,10 @@
 import React from 'react'
 
-const App = () => {
+const BioData = () => {
   return (
-    < >
-    <p>Hello React</p>
-    </>
+    
+    <div className='Name'>BioData</div>
   )
 }
 
-export default App
+export default BioData
