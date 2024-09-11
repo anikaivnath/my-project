@@ -7,6 +7,10 @@ const App = () => {
       
       <BioData name='Anika'
                email='anikaivnath8@gmail.com'
+               pnum='0197386476567'
+               github='Anika Ivnath'
+               skills={['html','css','Tailwind']}
+               interests={['Traveling','Movie']}
           />
     </div>
   );
