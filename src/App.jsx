@@ -10,7 +10,7 @@ const App = () => {
                pnum='0197386476567'
                github='Anika Ivnath'
                skills={['html','css','Tailwind']}
-               interests={['Traveling','Movie']}
+               interests={['Traveling','Movie','exploring']}
           />
     </div>
   );
