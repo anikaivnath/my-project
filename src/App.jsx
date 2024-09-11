@@ -30,7 +30,7 @@ const BioData = (props) => {
     </div>
     <div className='social-link'>
     <h2>
-      social media
+      Social media
     </h2>
     <ul>
       {props?.socialLinks?.map((socialLink)=>(
@@ -40,6 +40,18 @@ const BioData = (props) => {
         </li>
       ))}
       
+    </ul>
+
+    </div>
+    <div className='My interest'>
+    <h2>My interest</h2>
+    <ul>
+      
+        {props?.interests?.map((interest)=>(
+          <li key={interest}>{interest}</li>
+
+        ))}
+     
     </ul>
 
     </div>
