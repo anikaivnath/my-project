@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const BioData = (props) => {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className='flex flex-col items-center p-6 bg-blue-950 min-h-screen'>
-      <div className='bg-white p-6 rounded-lg shadow-md w-full max-w-lg'>
-        <div className='text-center text-2xl font-bold mb-4 bg-blue-500 text-white p-2 rounded-t-lg'>
-          BioData
+    <div className={`flex flex-col items-center p-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'} min-h-screen`}>
+      <div className={`bg-white p-6 rounded-lg shadow-md w-full max-w-lg ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
+        <div className='flex justify-between items-center mb-4'>
+          <div className={`text-center text-2xl font-bold p-2 rounded-t-lg ${darkMode ? 'bg-blue-700 text-white' : 'bg-blue-500 text-white'}`}>
+            BioData
+          </div>
+          <button
+            onClick={toggleDarkMode}
+            className={`ml-auto p-2 rounded ${darkMode ? 'bg-gray-600 text-white' : 'bg-gray-300 text-black'}`}
+          >
+            {darkMode ? 'Light Mode' : 'Dark Mode'}
+          </button>
         </div>
         <div className='text-center mb-6'>
           <h2 className='text-xl font-semibold'>BioData of {props.name}</h2>
