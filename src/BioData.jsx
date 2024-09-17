@@ -8,7 +8,7 @@ const BioData = (props) => {
   };
 
   return (
-    <div className={`flex flex-col items-center p-6 ${darkMode ? 'bg-gray-900' : 'bg-gray-100'} min-h-screen`}>
+    <div className={`flex flex-col items-center p-6 rounded-md text-black ${darkMode ? 'bg-gray-900' : 'bg-gray-100'} min-h-screen`}>
       <div className={`bg-white p-6 rounded-lg shadow-md w-full max-w-lg ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-900'}`}>
         <div className='flex justify-between items-center mb-4'>
           <div className={`text-center text-2xl font-bold p-2 rounded-t-lg ${darkMode ? 'bg-blue-700 text-white' : 'bg-blue-500 text-white'}`}>
